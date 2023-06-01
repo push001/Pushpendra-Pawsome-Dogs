@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Pushpendra's Pawsome<i class="fa fa-paw" style="font-size:36px"></i>  Dogs</h1>
+            <div class="image-container">
+                <img src="" id="dog-image" class="responsive" alt="A Dog image who is missing 😁">
+                <div class="loader-overlay">
+                    <div class="loader"><h3>Loading...</h3></div>
+                </div>
+            </div>
+        
+            <div class="user-action-container">
+                <select name="Category" id="breed-dropdown">
+                    <option value="random" selected>Random Category</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="retriever">Retriever</option>
+                    <option value="rottweiler">Rottweiler</option>
+                    <option value="shiba">Shiba</option>
+                </select>
+                <button id="get-dog-btn" class="btn">New Dog Pic!</button>
+            </div>
+            
+
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

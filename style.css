@@ -1,0 +1,83 @@
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.image-container img {
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1.3;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.image-container{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.loader-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
+    /* Add additional styles for the loader overlay */
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.responsive{
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+.btn{
+    position: relative;
+    width: 25%;
+    height: 50px;
+    margin: 10 auto;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: large;
+
+}
+
+#breed-dropdown{
+    position: relative;
+    width: 25%;
+    height: 50px;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    .btn,
+    #breed-dropdown {
+      width: 50%;
+      margin: 5px 0;
+    }
+  }
