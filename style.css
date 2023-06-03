@@ -12,7 +12,6 @@ body{
     flex-direction: column;
     position: relative;
     text-align: center;
-    justify-content: center;
     height: 100vh;
     
 }
@@ -27,7 +26,7 @@ body{
 
 .image-container {
     position: relative;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -63,7 +62,7 @@ body{
 
 .btn{
     position: relative;
-    width: 25%;
+    width: 50%;
     height: 50px;
     margin: 10 auto;
     background-color: blue;
@@ -75,7 +74,7 @@ body{
 
 #breed-dropdown{
     position: relative;
-    width: 25%;
+    width: 50%;
     height: 50px;
     font-size: large;
 }
@@ -116,7 +115,7 @@ body{
 @media (max-width: 768px) {
     .btn,
     #breed-dropdown {
-      width: 50%;
+      width: 80%;
       margin: 5px 0;
     }
   }
