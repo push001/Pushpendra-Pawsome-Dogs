@@ -3,22 +3,44 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
         <div class="wrapper">
             <h1>Pushpendra's Pawsome<i class="fa fa-paw" style="font-size:36px"></i>  Dogs</h1>
-            <div class="image-container">
-                <img src="" id="dog-image" class="responsive" alt="A Dog, who is missing! 😁">
-                <div class="loader-overlay">
-                    <div class="loader"><h3>Loading...</h3></div>
-                </div>
+            <div id="sucessAlert" class="alert alert-success m-3 d-none" role="alert">
+                Added To Favorites !!!
             </div>
-        
+
+            <div id="dangerAlert" class="alert alert-danger m-3 d-none" role="alert">
+                Removed from Favorites !!!
+            </div>
+
+            <div class="image-container">
+                <img src="" id="dog-image" class="responsive" alt="A Dog image who is missing 😁">
+                <button class="like-button" title="Add To Favourites" id="likeBtn">
+                  <i class="fa fa-heart fa-1x"></i>
+                </button>
+                
+                <button class="remove-favorite-button" title="Remove From Favourites" id="removeBtn">
+                    <i class="fa fa-close"></i>
+                  </button>
+                <div class="loader-overlay">
+                  <div class="loader"><h3>Loading...</h3></div>
+                </div>
+            </div>          
+            
+            
             <div class="user-action-container">
+                
+                
                 <select name="Category" id="breed-dropdown">
-                    <option value="random" selected>Random Category</option>
+                    <option value="random">Random Category</option>
+                    <option value="favourite" selected>My Favorites</option>
+                    
                     <option value="labrador">Labrador</option>
                     <option value="retriever">Retriever</option>
                     <option value="rottweiler">Rottweiler</option>
@@ -30,6 +52,8 @@
 
         </div>
         
-        <script src="script.js"></script>
+        <script src="script.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     </body>
 </html>
