@@ -113,8 +113,6 @@ function loadRandomDogFromFavoriteList() {
         // Get the random dog URL
         const randomDogUrl = favoriteDogsArray[randomIndex][1];
         favoriteDogId = favoriteDogsArray[randomIndex][0];
-        console.log(favoriteDogId);
-        console.log(favoriteDogsArray);
 
         // Display the random dog URL
         imgEl.src = randomDogUrl;
